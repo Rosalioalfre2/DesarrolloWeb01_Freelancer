@@ -4,14 +4,54 @@ html{
 
 body{
     font-size: 16px;
+    font-family: 'Krub', sans-serif;
 }
 /* 1 rem = 10 pixeles */
 
-h1{
-    text-align: center;
-    font-size: 3.8rem;
+:root{
+    --primario: #FFC107;
+    --oscuro: #212121;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --blanco: #FFFFFF;
 }
 
-h1 span{
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+    color: var(--primario);
+    font-weight: 700;
+}
+
+.titulo span{
     font-size: 2rem;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row; /*Este es default de flex pero lo puse para aprendelo */
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navegacion-principal a{
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
 }
